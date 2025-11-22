@@ -1,29 +1,24 @@
-.TH english-calc 1 "November 2025" "english-calc 1.0" "User Commands"
+.\" Manpage for english-calc
+.TH ENGLISH-CALC 1 "November 2025" "english-calc 1.0" "User Commands"
 .SH NAME
-english-calc \- perform arithmetic using English words or numbers
+english-calc \- simple English calculator for arithmetic expressions
 .SH SYNOPSIS
 .B english-calc
-number operation number
+.RI " expression" ""
 .SH DESCRIPTION
-The english-calc command evaluates basic arithmetic operations.
-It supports:
-.TP
-.B plus
-Addition
-.TP
-.B minus
-Subtraction
-.TP
-.B times
-Multiplication
-.TP
-.B divided
-Division
-.SH EXAMPLES
+The
+.B english-calc
+command evaluates short English arithmetic phrases like "three plus five"
+or numeric expressions like "3 plus 5" and prints the result.
+
+Supported operators: plus, minus, times, divided
+
+Examples:
+.RS 4
 .TP
 english-calc three plus five
 .TP
-english-calc 10 minus 4
+english-calc 4 times 6
+.RE
 .SH AUTHOR
 Mohammad Rihan Shahzad
-
