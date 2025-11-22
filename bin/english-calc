@@ -1,7 +1,6 @@
 #!/Users/training/homebrew/opt/bash/bin/bash
 # english-calc.sh
 
-# Map words to numbers
 declare -A numbers=(
     ["zero"]=0
     ["one"]=1
@@ -15,12 +14,10 @@ declare -A numbers=(
     ["nine"]=9
 )
 
-# Convert words to numbers if needed
 a="${numbers[$1]:-$1}"
 op="$2"
 b="${numbers[$3]:-$3}"
 
-# Perform calculation
 case "$op" in
     plus) echo "$a + $b = $(($a + $b))" ;;
     minus) echo "$a - $b = $(($a - $b))" ;;
