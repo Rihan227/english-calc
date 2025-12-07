@@ -1,4 +1,4 @@
-#!/Users/training/homebrew/opt/bash/bin/bash
+#!/usr/bin/env bash
 # english-calc.sh
 
 declare -A numbers=(
